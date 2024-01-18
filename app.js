@@ -18,4 +18,6 @@ routesInit(app);
 const server = http.createServer(app);
 
 let port = process.env.PORT || 3002;
-server.listen(port);
+server.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+  });
