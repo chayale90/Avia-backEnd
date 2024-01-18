@@ -1,0 +1,16 @@
+{
+  "name": "api-customers",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node app",
+    "type": "module"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}

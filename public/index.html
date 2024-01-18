@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Api customers</title>
+  </head>
+
+  <body>
+    <header class="containet-fluid">
+      <div class="container">
+        <h1 class="display-5 text-center pt-3 text-primary">
+          Customers API Documentation
+        </h1>
+      </div>
+    </header>
+
+    <main class="container-fluid">
+      <div class="container">
+        <table class="table table-primary table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Method</th>
+              <th scope="col">URL</th>
+              <th scope="col">Body</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>GET</th>
+              <td>/users/users-list</td>
+              <td></td>
+              <td>Get a List of all users</td>
+            </tr>
+            <tr>
+              <th>POST</th>
+              <td>/users/add-user</td>
+              <td>
+                <pre>
+                  {
+                "firstname": "Mendy",
+                 "lastname": "Segal",
+                "email": "mendy20@gmail.com",
+                "phone": "0554473885",
+                  "plan": "home", 
+                }
+            </pre
+                >
+              </td>
+              <td>Add a new user to the data base</td>
+            </tr>
+            <tr>
+              <th>GET</th>
+              <td>/users/:userEmail</td>
+              <td></td>
+              <td>Get user by his email</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
