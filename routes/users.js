@@ -3,10 +3,6 @@ const express = require("express");
 const path = require("path");
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.json({ msg: "users work" });
-});
-
 // function to read users from the JSON file
 const readUsersFromJson = () => {
   const usersJson = fs.readFileSync(
@@ -15,6 +11,11 @@ const readUsersFromJson = () => {
   );
   return JSON.parse(usersJson);
 };
+
+router.get("/", (req, res) => {
+  res.json({ msg: "users work" });
+});
+
 router.get("/users-list", async (req, res) => {
   try {
     const currentUsers = readUsersFromJson();
