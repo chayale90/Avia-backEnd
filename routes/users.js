@@ -2,15 +2,8 @@ const fs = require("fs");
 const express = require("express");
 const path = require("path");
 const router = express.Router();
+const { readUsersFromJson } = require("../utils/fileUtils");
 
-// function to read users from the JSON file
-const readUsersFromJson = () => {
-  const usersJson = fs.readFileSync(
-    path.join(__dirname, "../customers.json"),
-    "utf8"
-  );
-  return JSON.parse(usersJson);
-};
 
 router.get("/", (req, res) => {
   res.json({ msg: "users work" });
