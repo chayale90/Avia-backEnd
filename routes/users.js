@@ -4,7 +4,6 @@ const path = require("path");
 const router = express.Router();
 const { readUsersFromJson } = require("../utils/fileUtils");
 
-
 router.get("/", (req, res) => {
   res.json({ msg: "users work" });
 });
