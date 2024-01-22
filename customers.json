@@ -477,7 +477,7 @@
   },
   {
     "firstname": "מנדי",
-    "lastname": "מנדי",
+    "lastname": "פרידמן",
     "phone": "222222222",
     "email": "admin@test.com",
     "plan": "light"
@@ -485,14 +485,14 @@
   {
     "firstname": "חנה",
     "lastname": "חנה",
-    "phone": "444444422",
+    "phone": "0547809809",
     "email": "chayale9999@gmail.com",
     "plan": "connect"
   },
   {
     "firstname": "שמעון",
     "lastname": "רוטר",
-    "phone": "222222226",
+    "phone": "0547654567",
     "email": "user@test.com",
     "plan": "connect"
   },
